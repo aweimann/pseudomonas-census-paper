@@ -5,8 +5,8 @@ hc_clust.R - use hierarchical clustering of SNP distances between isolate genome
 subsample_alignment_horizontally.py - subset FASTA alignment to samples of interest.  
 
 ## Dating
-plotDCCBayesianSkylinePlot.R - based on C. Ruis. Aggregates Skyline model population size data across clones and outputs plots of inferred clone historical population sizes.
-modify_beast_xml.py - modifies BEAST XML template generated with BEAUti to prepare input XMLs for BEAST runs for multiple clones.
+plotDCCBayesianSkylinePlot.R - based on C. Ruis. Aggregates Skyline model population size data across clones and outputs plots of inferred clone historical population sizes.  
+modify_beast_xml.py - modifies BEAST XML template generated with BEAUti to prepare input XMLs for BEAST runs for multiple clones.  
 root_age.py - from Treeannotator annotated trees, alignment and sample dates work out root age for input tree. 
 
 ## Pathoadaptation
