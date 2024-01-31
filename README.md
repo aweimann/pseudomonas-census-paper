@@ -1,7 +1,7 @@
-# pseudomonas-census-paper
+# Pseudomonas Census Paper
 
 ## Instructions
-The scripts in this repository rely on the data in the associated Zenodo repository.
+The scripts in this repository rely on the data in the associated Zenodo repository and are described roughly in the intended order of execution.
 
 ## Genomics
 hc_clust.R - use hierarchical clustering of SNP distances between isolate genomes to define genomic clusters.
@@ -12,17 +12,17 @@ cf_per_clone.R - get clone CF/non-CF proportions and compare with surveillance d
 ## Dating
 plotDCCBayesianSkylinePlot.R - based on C. Ruis. Aggregates Skyline model population size data across clones and outputs plots of inferred clone historical population sizes.  
 modify_beast_xml.py - modifies BEAST XML template generated with BEAUti to prepare input XMLs for BEAST runs for multiple clones.  
-root_age.py - from Treeannotator annotated trees, alignment and sample dates work out root age for input tree. 
+root_age.py - from Treeannotator annotated trees, alignment and sample dates work out root age for input tree.    
 
 ## Pathoadaptation
 get_node_transmission_type.py - annotate nodes/branches in clone trees based on (ancestral) infection type and transmissibility (needs correct columns from samples_qc_filtered_and_annotated_v2.txt as inputs).    
 mutational_distribution.R - aggregate variant effect annotation across clones and perform mutational burden test.    
-manhattan_plot.R - make Manhattan and QQ-plot (run mutational_distribution.R).    
+manhattan_plot.R - make Manhattan and QQ-plot (run mutational_distribution.R).
+process_pathoadaptive_mutations.py - infer sequence of mutations in evolutionary time (only use mutations in mutational burden test hits as input if used for subsequent analyses.).    
 plot_gene2patho_position.R - plot gene specific burden over evolutionary time.    
 plot_patho_per_sample.py - get UMAP of pathoadaptive space.   
-plot_patho_per_sample.R - UMAP scatter plot (run plot_patho_per_sample.py first)    
+plot_patho_per_sample.R - UMAP scatter plot (run plot_patho_per_sample.py first).    
 test_transmissibility_and_cfness.R - test mutational burden test hits for over/underrepresentation of CF vs non-CF, and transmitted vs untransmitted mutations (run mutational_distribution.R and get_node_transmission_type.py first). 
-
  
 ## Ancestral genome analysis
 get_clone_representative.py - get ancestral genome representatives based on parsimony ancestral character state reconstruction.  
