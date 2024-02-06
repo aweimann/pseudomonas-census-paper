@@ -1,7 +1,7 @@
 # Pseudomonas Census Paper
 
 ## Instructions
-The scripts in this repository rely on the data in the associated Zenodo repository and are described roughly in the intended order of execution.
+The scripts in this repository rely on the data in the associated Zenodo repository (https://doi.org/10.5281/zenodo.10600286) and are described roughly in the intended order of execution.
 
 ## Genomics
 hc_clust.R - use hierarchical clustering of SNP distances between isolate genomes to define genomic clusters.
