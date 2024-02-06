@@ -7,7 +7,7 @@ The scripts in this repository rely on the data in the associated Zenodo reposit
 hc_clust.R - use hierarchical clustering of SNP distances between isolate genomes to define genomic clusters.
 subsample_alignment_horizontally.py - subset FASTA alignment to samples of interest.  
 transmission.R - infer potential transmission links based on genomic relatedness.    
-cf_per_clone.R - get clone CF/non-CF proportions and compare with surveillance data.
+cf_per_clone.R - get clone CF/non-CF proportions (CF vs non-CF patients) and compare with surveillance data.
 
 ## Dating
 plotDCCBayesianSkylinePlot.R - based on C. Ruis 20. Aggregates Skyline model population size data across clones and outputs plots of inferred clone historical population sizes.  
